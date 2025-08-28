@@ -56,7 +56,7 @@ export default function DashboardPage() {
         <div className="dashboard-header-content">
           <div className="dashboard-title-section">
             <h1 className="dashboard-title">Dashboard</h1>
-            <p className="dashboard-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            <p className="dashboard-subtitle">Streamline your business operations with our comprehensive management platform.</p>
           </div>
           <div className="dashboard-header-actions">
             <div className="dashboard-user-info">
