@@ -40,7 +40,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   // Initialize auth state
   useEffect(() => {
     let mounted = true;
-    let abortController = new AbortController();
+    const abortController = new AbortController();
 
     async function initializeAuth() {
       try {
@@ -125,7 +125,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       abortController.abort();
       subscription.unsubscribe();
     };
-  }, []);
+  }, [isSigningOut]);
 
   const signIn = async (data: SignInData): Promise<{ error: string | null }> => {
     try {
